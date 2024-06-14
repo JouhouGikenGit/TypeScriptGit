@@ -1,7 +1,7 @@
 import { Button, TextField, Box } from "@mui/material";
 import React, { useState } from "react";
 
-const calTanabe = () => {
+const calTanabe:React.FC = () => {
   const [num, setNum] = useState(0);
   const [num1, setNum1] = useState(0);
   const handleCal = ({inputA, inputB}) => {

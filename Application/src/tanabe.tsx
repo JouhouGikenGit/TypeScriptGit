@@ -5,7 +5,7 @@ import React, { useState } from "react";
     inputA:number,
     inputB:number
 }
-const CalTanabe:React.FC<Cal> = () => {
+const CalTanabe:React.FC<Cal> = ({inputA,inputB}) => {
   const [num, setNum] = useState<number>(0);
   const [num1, setNum1] = useState<number>(0);
   const handleCal = () => {

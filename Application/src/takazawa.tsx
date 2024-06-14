@@ -17,7 +17,7 @@ return(
     <div>
         <Box display="flex" alignItems="center" gap={3}>
         <Button variant="contained" style={{marginTop:"20px"}} onClick={hundleMinusClick}>-</Button>
-        <TextField value={num} style={{marginTop:"20px"}} label="割り算の結果が表示されます" disabled/>
+        <TextField value={num} style={{marginTop:"20px"}} label="引き算の結果が表示されます" disabled/>
         </Box>
         </div>
       );

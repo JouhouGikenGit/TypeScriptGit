@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Grid, Box } from '@mui/material';
 import CalTanabe from './tanabe.tsx';
+import { Kitami } from './kitami.tsx';
 
 function App() {
   const [inputA, setInputA] = useState<number>(0);
@@ -31,6 +32,7 @@ function App() {
           style={{ color: "#000000", backgroundColor: "#00ffff" }} 
         />
       </Box>
+      <Kitami inputNum1={inputA} inputNum2={inputB} />
       <CalTanabe inputA={inputA} inputB={inputB} />
     </>  
   );

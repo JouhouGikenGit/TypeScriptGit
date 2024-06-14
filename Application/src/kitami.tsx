@@ -1,19 +1,19 @@
 import { Button, Stack, TextField } from "@mui/material"
 import { useState } from "react"
 
-type TypeAdd = {
-    inputNum1: string;
-    inputNum2: string;
+export type TypeAdd = {
+    inputNum1: number;
+    inputNum2: number;
 }
-const Kitami = (props: TypeAdd) => {
+export const Kitami = (props: TypeAdd) => {
     const [addResult, setAddResult] = useState(0);
 
     const handleClick = () => {
-        setAddResult(parseInt(props.inputNum2) + parseInt(props.inputNum1));
+        setAddResult(props.inputNum1 + props.inputNum2);
     }    
     return(
         <Stack direction="row" spacing={2}>
-            <Button onClick={handleClick}>＋</Button>
+            <Button onClick={handleClick} >＋</Button>
             <TextField value={addResult} />
         </Stack>
     )

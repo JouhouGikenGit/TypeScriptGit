@@ -15,9 +15,9 @@ const hundleMinusClick = () => {
 
 return(
     <div>
-        <Box display="flex" alignItems="center" gap={1}>
-        <Button onClick={hundleMinusClick}>-</Button>
-        <TextField value={num} disabled/>
+        <Box display="flex" alignItems="center" gap={3}>
+        <Button variant="contained" style={{marginTop:"20px"}} onClick={hundleMinusClick}>-</Button>
+        <TextField value={num} style={{marginTop:"20px"}} disabled/>
         </Box>
         </div>
       );

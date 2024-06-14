@@ -10,7 +10,8 @@ function App() {
   const [inputB, setInputB] = useState<number>(0);
 
   return (
-    <><Grid item xs={6}>
+    <><Grid container spacing={2}>
+      <Grid item lg={6}>
       <Box    
         display="flex"
         flexDirection="column"
@@ -35,11 +36,11 @@ function App() {
         />
       </Box>
       </Grid>
-      <Grid item xs={6}>
-      <CalTakazawa inputA={inputA} inputB={inputB} />
+      <Grid item lg={6}>
       <Kitami inputNum1={inputA} inputNum2={inputB} />
+      <CalTakazawa inputA={inputA} inputB={inputB}  />
       <CalTanabe inputA={inputA} inputB={inputB} />
-      </Grid>
+      </Grid></Grid>
     </>  
   );
 }

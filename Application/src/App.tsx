@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextField, Button, Grid, Box } from '@mui/material';
 import CalTanabe from './tanabe.tsx';
 import CalTakazawa from './takazawa.tsx';
-
+import { Kitami } from './kitami.tsx';
 function App() {
   const [inputA, setInputA] = useState<number>(0);
   const [inputB, setInputB] = useState<number>(0);
@@ -35,6 +35,7 @@ function App() {
       </Grid>
       <Grid item xs={6}>
       <CalTakazawa inputA={inputA} inputB={inputB} />
+      <Kitami inputNum1={inputA} inputNum2={inputB} />
       <CalTanabe inputA={inputA} inputB={inputB} />
       </Grid>
     </>  

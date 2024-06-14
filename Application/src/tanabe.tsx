@@ -2,12 +2,12 @@ import { Button, TextField, Box } from "@mui/material";
 import React, { useState } from "react";
 
 const calTanabe:React.FC = () => {
-  const [num, setNum] = useState(0);
-  const [num1, setNum1] = useState(0);
-  const handleCal = ({inputA, inputB}) => {
+  const [num, setNum] = useState<number>(0);
+  const [num1, setNum1] = useState<number>(0);
+  const handleCal = () => {
     setNum(inputA * inputB);
   };
-  const handleCal1 = ({inputA, inputB}) => {
+  const handleCal1 = () => {
     setNum1(inputA / inputB);
   };
 

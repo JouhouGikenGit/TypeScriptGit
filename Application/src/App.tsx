@@ -3,6 +3,8 @@ import { TextField, Button, Grid, Box } from '@mui/material';
 import CalTanabe from './tanabe.tsx';
 import CalTakazawa from './takazawa.tsx';
 import { Kitami } from './kitami.tsx';
+
+
 function App() {
   const [inputA, setInputA] = useState<number>(0);
   const [inputB, setInputB] = useState<number>(0);

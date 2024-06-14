@@ -13,8 +13,8 @@ export const Kitami = (props: TypeAdd) => {
     }    
     return(
         <Stack direction="row" spacing={2}>
-            <Button onClick={handleClick} >＋</Button>
-            <TextField value={addResult} />
+            <Button variant="contained" onClick={handleClick} >＋</Button>
+            <TextField label="足し算の結果が表示されます" disabled value={addResult} />
         </Stack>
     )
 }
